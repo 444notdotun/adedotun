@@ -9,7 +9,7 @@ import java.util.Scanner;
 			System.out.print("enter the value for t:");
 			double t = input.nextDouble();
 			double a = (v1 - v0) / t;
-			double c = v0 - v1;
+			double d = v0 - v1;
 			System.out.println("The average acceleration is" + a);
 
 }
