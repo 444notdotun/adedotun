@@ -1,0 +1,41 @@
+import java.util.Scanner 
+Public class CompareInteger{
+	Public static void main(String[] args){
+		Scanner input= new Scanner(System.in);
+		System.out.print("enter a value);
+		int value = input.nextInt();
+		int square = value * value;
+// greater than
+		If( value > 100){
+			System.out.printf(" %d%n" > 100, value)
+		}
+		If(square > 100){
+			System.out.printf("  %d%n" >100, sqaure);
+		}
+// equal too
+		If(value == 100){
+			System.out.printf("%d%n" ==100, value);
+		}
+		If (square  == 100){
+			System.out.printf("%d%n" == 100, square);
+		}
+// NOT EQAUL TO
+		If(value != 100){
+			System.out.printf(%d%n !=100, value);
+		}
+		If (square  != 100){
+		 	System.out.printf("%d%n" != 100, square);
+		}
+// less than
+		If(value < 100){
+			System.out.printf(%d%n < 100, value);
+		}
+		If(square < 100){
+			System.out.printf("%d%n" <100, square);
+		}
+
+
+
+}
+
+}

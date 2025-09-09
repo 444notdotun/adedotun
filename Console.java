@@ -7,14 +7,14 @@ import java.util.Scanner;
 			String name = input.nextLine();
 			
 			System.out.printf("Hello,%s! Welcome to your personal assitant %n",name); 
-			
+			System.out.println(" ");
 			
 
 //mood and suggestion
 			System.out.print("How are you feeling today?(happy,sad,excited,tired): ");
 			String mood = input.nextLine();
 
-			System.out.print("Do you want a suggestion for the day?");
+			System.out.print("Do you want a suggestion for the day?(yes/no): ");
 			String suggest = input.nextLine();
 
 
@@ -51,7 +51,7 @@ import java.util.Scanner;
 				System.out.println("no worries! have a great day anyway!");
 			}
 
-
+			System.out.println(" ");
 
 
 //conditions on age		
@@ -74,7 +74,7 @@ import java.util.Scanner;
 			if(age >= 60){
 			System.out.printf("Wisdom looks good on you! %n" ,name ,age);
 			}
-
+			System.out.println(" ");
 //guess condition
 
 
