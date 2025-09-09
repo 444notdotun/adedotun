@@ -5,19 +5,36 @@ import java.util.Scanner;
 			
 			System.out.print("what's your name?: ");
 			String name = input.nextLine();
+			System.out.println(" ");
+
+			System.out.print("How are you feeling today?(happy,sad,excited,tired): ");
+			String mood = input.nextLine();
+			System.out.println(" ");
+		
+			System.out.print("do you want suggestion?");
+			String suggest = input.nextLine();
+			System.out.println(" ");
+			
+			System.out.print("how old are you: ");
+			int age = input.nextInt();
+			System.out.println(" ");
+
+			System.out.println(" ");
+			System.out.print("it's your lucky day, guess between 1 and 10: ");
+			int guess = input.nextInt();
+			
+
+			
+	
 			
 			System.out.printf("Hello,%s! Welcome to your personal assitant %n",name); 
 			System.out.println(" ");
 			
 
 //mood and suggestion
-			System.out.print("How are you feeling today?(happy,sad,excited,tired): ");
-			String mood = input.nextLine();
+			
 
-			System.out.print("Do you want a suggestion for the day?(yes/no): ");
-			String suggest = input.nextLine();
-
-
+			
 
 			if(mood .equals ("happy")){
 			System.out.printf("you're %s,cheer up! Keep smilimg! %n", mood);
@@ -26,6 +43,7 @@ import java.util.Scanner;
 					if(!suggest .equals("yes"))
 				System.out.println("no worries! have a great day anyway!");
 			}
+		
 			
 			if(mood .equals ("sad")){
 			System.out.printf("you're %s,cheer up! Tomoorow is a new day.%n", mood);
@@ -34,7 +52,7 @@ import java.util.Scanner;
 					if(!suggest .equals("yes"))
 				System.out.println("no worries! have a great day anyway!");
 			}
-
+		
 			if(mood .equals ("excited")){
 			System.out.printf("you're %s,Awesome! Enjoy your energy! %n", mood);
 				if( suggest .equals(" yes")) 
@@ -42,6 +60,7 @@ import java.util.Scanner;
 					if(!suggest .equals("yes"))
 				System.out.println("no worries! have a great day anyway!");
 			}
+			
 
 			if(mood .equals ("tired") ){
 			System.out.printf("you're %s,Rest well and recharge! %n", mood);
@@ -50,14 +69,17 @@ import java.util.Scanner;
 					if(!suggest .equals("yes"))
 				System.out.println("no worries! have a great day anyway!");
 			}
+			
+}
 
-			System.out.println(" ");
+
+
+			
 
 
 //conditions on age		
 			
-			System.out.print("how old are you: ");
-			int age = input.nextInt();
+			
 	
 
 			if(age < 13){
@@ -78,8 +100,7 @@ import java.util.Scanner;
 //guess condition
 
 
-			System.out.print("it's your lucky day, guess between 1 and 10: ");
-			int guess = input.nextInt();
+			
 
 
 
