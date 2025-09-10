@@ -30,26 +30,31 @@ import java.util.Scanner;
 			
 
 //mood and suggestion
-			if( mood .equals("happy")){
+			if( mood .equalsIgnoreCase("happy")){
 			System.out.println("Keep smiling!");}
-			else if ( mood.equals("sad")){
+			else if ( mood.equalsIgnoreCase("sad")){
 			System.out.println("cheer up!Tomorrow is a new day");}
-			else if ( mood.equals("excited")){
+			else if ( mood.equalsIgnoreCase("excited")){
 			System.out.println("Awesome! Enjoy your energy");}
-			else if ( mood.equals("tired")){
+			else if ( mood.equalsIgnoreCase("tired")){
 			System.out.println("Rest well and recharge!");}
 			else{System.out.println("invalid input");}
+			
 			System.out.println(" ");
 
-			if( suggest .equals("yes")  && mood .equals("happy")){
-			System.out.println("Go out and play a sport you like!");}
-			else if(suggest .equals("yes") && mood .equals("sad")){
-			System.out.println("Take a short walk outside and get some fresh air.");}
-			else if(suggest .equals("yes") && mood .equals("excited")){
-			System.out.println("Share your excitement by helping someone!");}
-			else if(suggest .equals("yes") && mood .equals("tired")){
-			System.out.println("Have a short nap or rest to recharge.");}
-			else{System.out.println("No worries! Have a great day anyway!");} 
+			if( suggest .equals("yes")){
+				if( mood .equalsIgnoreCase("happy"))
+				System.out.println("Go out and play a sport you like!");
+				if( mood .equalsIgnoreCase("sad"))
+				System.out.println("Take a short walk outside and get some fresh air.");
+			 	if( mood .equalsIgnoreCase("excited"))
+				System.out.println("Share your excitement by helping someone!");
+				if( mood .equalsIgnoreCase("tired"))
+				System.out.println("Have a short nap or rest to recharge.");
+			}
+			else {
+				System.out.println("No worries! Have a great day anyway!"); 
+			}
 
 			System.out.println(" ");
 			
