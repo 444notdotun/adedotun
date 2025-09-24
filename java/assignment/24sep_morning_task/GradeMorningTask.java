@@ -19,51 +19,40 @@ import java.util.Scanner;
 		public static void main(String [] args){
 			Scanner input = new Scanner(System.in);
 			
-			int count = 3;
-			int sum = 0;
+			int count = 0;
+			int score = 0;
+
+			while(count < 3){
+			
+			System.out.print("enter  score: ");
+			int score1 = input.nextInt();
+			score+=score1;
+			count++;
+			}
+			score/=3;
+			
+			
+			
+				if(score >= 90 && score <= 100){
+					System.out.printf("grade of average is A and the average score %d",score);
+				}
+				else if(score>= 80 && score < 90){
+					System.out.printf("grade of average is B and the average score %d",score);
+				}
+				else if(score>= 70 && score < 80){
+					System.out.printf("grade of average is C and the average score %d",score);
+				}
+				else if(score>= 60 && score < 70){
+					System.out.printf("grade of average is D and the average score %d",score);
+				}
+				else{
+					System.out.printf("grade of average is F and the average score %d",score);
+				}
 
 			
-
-			while(count > 0){
-			System.out.print("enter a score: ");
-			int score = input.nextInt();
-
-			if(score >= 0 && score <= 100){ 
-			sum += score;
 			
-			if(score >= 90 && score <= 100){
-				System.out.printf("The score is %d and the grade is A%n",score);
-			}
-			else if(score>= 80 && score < 90){
-				System.out.printf("The score is %d and the grade is B%n",score);
-			}
-			else if(score>= 70 && score < 80){
-				System.out.printf("The score is %d and the grade is c%n",score);
-			}
-			else if(score>= 60 && score < 70){
-				System.out.printf("The score is %d and the grade is D%n",score);
-			}
-			else{
-				System.out.printf("The score is %d and the grade is F%n",score);
-			}
-
-			count--;
-			}
-			else{
-				System.out.println("invalid input!");
-			}
-
-
-			
-
 
 		}
-		count = 3;
 
-		System.out.print("average is" + " " + sum / count);
-
-
-
-
-	}
+	
 }
