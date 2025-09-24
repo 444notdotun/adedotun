@@ -87,7 +87,7 @@ import java.util.Scanner;
 				condition = winner;
 				}
 
-				System.out.println(condition);
+				
 
 			}
 			if(human > computer){

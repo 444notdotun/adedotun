@@ -5,23 +5,23 @@
 			System.out.print("enter input: ");
 			int number = input.nextInt();
 
-			System.out.println(number);
+			
 
-			int count = 0;
+			int count = 1;
 			int largest = number;
 
 			while(count < 10){
 				System.out.print("enter input: ");
 				number = input.nextInt();
 		
-				System.out.println(number);
+				
 				if(number > largest){
 					largest = number;
 				}
 				count++;
 			}
 			
-			System.out.println(largest);
+			System.out.println( "The largest number is " + largest);
 
 		}
 

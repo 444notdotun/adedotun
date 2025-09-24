@@ -23,7 +23,7 @@ import java .util.Scanner;
  
 			while(choice != 0){
 
-				System.out.print("enter gallon used in a trip or  to exit: ");
+				System.out.print("enter gallon used in a trip: ");
 				gallon = input.nextInt();
 				System.out.print("enter miles used in a trip: ");
 				miles = input.nextInt();
