@@ -8,31 +8,33 @@ import java.util.Scanner;
 			int newnumber =  number % 10;
 			
 
-			int largest = newnumber;
-			int div = 5 ;
+			int max = newnumber;
+			int div = 1;
 			
 			int count = 0;
+			int maxy =0;
 			
-			while(div > 0){
-				
+			while(number > 0){
 				newnumber = number % 10;
-				if(newnumber > largest){
-					largest = newnumber;
-					System.out.print(newnumber);}
+				
+				if(newnumber > max){
+					max = newnumber;
+					count = 1;
+				}
+				
+
+					if( newnumber == max){
+						count++;
+						//System.out.print(max);
 					
-					if( newnumber == largest){
-						count++;}
-					
-				//div = number / 10;
-div--;
+				}	
+			
+				number = number / 10;
 			}
 
-			//System.out.println(count);
-
-
-		
+			//System.out.println(max);
+			System.out.print(count);
 			
-
 		}
 
 	}

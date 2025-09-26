@@ -1,18 +1,16 @@
 
-public class CheckBoard1{
+public class CheckBoard{
 	public static void main(String [] args){
 		 int count = 1;
-		while(count <= 4){
-			System.out.println();
+		while(count <= 8){
+			System.out.println("");
 			int counter = 1;
-			while(counter <= 1)
-				int counting = 1;
-				while(counting <= 1){
+			while(counter <= 8)
+				counting = 1;
+				while(counting <= 8){
 					System.out.print("*");
-					System.out.print(" hi");
 					counting++;
 				}
-			System.out.print(" ");
 			System.out.print(" *");
 			counter++;
 			}
