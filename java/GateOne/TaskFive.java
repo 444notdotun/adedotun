@@ -7,7 +7,7 @@ public class TaskFive{
 					if(count % 4 == 0){
 					
 						while(counter <= 5){
-						System.out.println("even number " + count);
+						System.out.print(count);
 						counter++;
 					}
 				}

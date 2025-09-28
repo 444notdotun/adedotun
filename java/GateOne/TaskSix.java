@@ -9,7 +9,7 @@ public class TaskSix{
 					
 						while(counter <= 5){
 						multiples *= count;
-						System.out.println(multiples);
+						System.out.print(multiples+" ");
 						counter++;
 					}
 					multiples = 1;

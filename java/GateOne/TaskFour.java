@@ -4,7 +4,7 @@ public class TaskFour{
 			int count = 1;
 			while(count <= 10){
 				if(count % 4 == 0)
-					System.out.println("even number " + count);
+					System.out.print("even number " + count);
 
 			count++;
 

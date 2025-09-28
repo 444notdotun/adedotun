@@ -17,7 +17,7 @@ public class TaskSeven{
 						counter++;
 					}
 					if(sum> 0)
-					System.out.println(sum);
+					System.out.print(sum+" ");
 
 					sum = 0;
 					multiples = 1;
@@ -29,7 +29,7 @@ public class TaskSeven{
 
 				}
 
-			//System.out.println(sum);
+			
 
 
 
