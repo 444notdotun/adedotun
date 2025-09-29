@@ -1,16 +1,16 @@
  
 number =int(input("enter a number: "))			
-mod = 0
-div = number
-addmod = 0
-while(div > 0):
-	mod = div % 10
+modulus = 0
+division = number
+addition = 0
+while(division > 0):
+	modulus = div % 10
 				
 												
-	addmod += mod
-	print(addmod, end="")
-	addmod = 0
-	div = div // 10
+	addition += modulus
+	print(addition, end="")
+	addition = 0
+	division = division // 10
 			
 
 
