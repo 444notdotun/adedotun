@@ -1,21 +1,21 @@
-newnumber =int(input("enter a palindrome: "))
-lastnumbers = 0
-firstnumbers = 0
-lastnum1 =  0
-lastnum2 = 0
-firstnum1 = 0
-firstnum2 = 0
+new_number =int(input("enter a palindrome: "))
+last_numbers = 0
+first_numbers = 0
+last_num1 =  0
+last_num2 = 0
+first_num1 = 0
+first_num2 = 0
 count = 0
 while(count < 1):
-	if newnumber >=10000 and newnumber <= 99999:
-		lastnumbers = newnumber % 100
-		firstnumbers = newnumber // 1000
-		lastnum1 = lastnumbers % 10
-		lastnum2 = lastnumbers // 10
-		firstnum1 = firstnumbers % 10
-		firstnum2 = firstnumbers // 10
+	if new_number >=10000 and newnumber <= 99999:
+		last_numbers = new_number % 100
+		first_numbers = new_number // 1000
+		last_num1 = last_numbers % 10
+		last_num2 = last_numbers // 10
+		first_num1 = first_numbers % 10
+		first_num2 = first_numbers // 10
 				
-		if lastnum1 == firstnum2 and lastnum2 == firstnum1:
+		if last_num1 == first_num2 and last_num2 == first_num1:
 			print("it is a palindrome")
 			count+=1
 		else:
@@ -23,7 +23,7 @@ while(count < 1):
 			count+=1
 		
 			
-	elif (newnumber < 10000 or newnumber > 99999):
+	elif (new_number < 10000 or new_number > 99999):
 		print("invalid value!")
 		
-		newnumber = int(input("enter a palindrome: "))
+		new_number = int(input("enter a palindrome: "))
