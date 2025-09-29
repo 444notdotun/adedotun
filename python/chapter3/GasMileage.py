@@ -15,8 +15,8 @@ choice = 1
 while(choice != 0):
 	gallon = int(input("enter gallon used in a trip: "))
 	miles = int(input("enter miles: "))			
-	gasmileage = gallon / miles
-	trips += gasmileage
+	gas_mileage = gallon / miles
+	trips += gas_mileage
 	count+=1
 
 	choice =int(input("do you want continue?, 0 to exit & any number to continue: "))
