@@ -1,14 +1,20 @@
+
 prime_number = int(input("enter a positive number: "))
+division = 0
 if prime_number < 1:
-	print("enter a positive number")
+		print("invalid input enter a positive number")
+		
 else:
-	for number in range (2,6):
-		division = prime_number %  number
-		if division == 0:
+	import math
+	number =int( math.sqrt(prime_number))
+	number+=1
+	for numbers in range (2,number):
+		
+		division = prime_number %  numbers
+		if division == 0 and numbers < number:
 			print("it is not a prime number")
 			break 
-			
+		
 		
 if division > 0:
 	print("it is  a prime number")
-
