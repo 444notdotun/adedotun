@@ -1,5 +1,8 @@
+import java.util.Scanner;
+
 public class Kata{
 
+Scanner input = new Scanner(System.in);
 public static int FactorOf(int number){
 int count = 1;
 int factor = 0;
@@ -192,6 +195,182 @@ public static long squareOf(int number){
 	int square = number *number;
 	return square;
 }
+
+
+public static String pizzaOf(String pizzainput){
+		if(pizzainput.equalsIgnoreCase("sapa size")){
+			return "1";
+		}
+		else if(pizzainput.equalsIgnoreCase("small money")){
+			return "2";
+		}
+		else if(pizzainput.equalsIgnoreCase("big boys")){
+			return "3";
+		}
+		else if(pizzainput.equalsIgnoreCase("odogwu")){
+			return "4";
+		}
+		
+		return	"0";
+		
+
+		
+}
+
+public static  int  sumOf(){
+Scanner input = new Scanner(System.in);
+int count = 1;
+int sum = 0;
+int number = 0;
+	while(count <= 10){
+		System.out.print("enter a number: ");
+		number =input.nextInt();
+		sum+=number;
+		count++;
+	}
+
+return sum;
+
+
+}
+
+
+
+public static int averageOf(){
+
+Scanner input = new Scanner(System.in);
+int count = 1;
+int sum = 0;
+int number = 0;
+	while(count <= 10){
+		System.out.print("enter a number: ");
+		number = input.nextInt();
+		sum+=number;
+		count++;
+	}
+
+return sum/10;
+
+
+}
+public static void averageSumOf(){
+Scanner input = new Scanner(System.in);
+int count = 1;
+int sum = 0;
+int number = 0;
+	while(count <= 10){
+		System.out.print("enter a number: ");
+		number = input.nextInt();
+		sum+=number;
+		count++;
+	}
+
+int average = sum/10;
+
+
+
+System.out.println( "average is "+ average + " " +"sum is "+ sum);
+
+
+
+}
+
+public static int sumindexOf(){
+
+Scanner input = new Scanner(System.in);
+int count = 0;
+int sum = 0;
+int [] scores = new int [10];
+
+	while(count < 10){
+		System.out.print("enter a number: ");
+		scores[count] = input.nextInt();
+		if(count > 0 && count % 2 == 0){
+		sum+=scores[count];
+		}
+		count++;
+	}
+return sum;
+
+}
+
+public static int sumEvenOf(){
+
+Scanner input = new Scanner(System.in);
+int count = 0;
+int sum = 0;
+int[] score = new int [10];
+
+	while(count < 10){
+		System.out.print("enter a number: ");
+		score[count] = input.nextInt();
+		if(score[count] % 2 == 0){
+		sum+=score[count];
+		
+
+		}
+		count++;
+	}
+return sum;
+
+
+
+}
+
+public static int averageOfArray(){
+int average = sumEvenOf()/10;
+return average;
+
+}
+public static void averageAndSumOfArray(){
+int sum = sumEvenOf();
+int average = sum/10;
+
+int [] total = new int [2];
+total[0] = average;
+total[1] = sum;
+for(int count = 0; count < 2;count++){
+System.out.println(total[count]);
+}
+}
+
+public static int validScoreof(){
+
+Scanner input = new Scanner(System.in);
+
+int count = 1;
+int sum = 0;
+
+
+
+while(count <= 10){
+System.out.print("enter a number (0-100): ");
+int number = input.nextInt();
+
+if(number > 0 && number < 100){
+sum+=number;
+count++;
+
+}
+else{
+System.out.println("invalid input");
+
+}
+
+}
+
+return sum;
+
+
+}
+
+
+
+
+
+
+
+
 
 
 }
