@@ -178,26 +178,86 @@ public class FemiTask{
 	
 
 
-String vowels = "aeiou";
-String words = "mr femi";
-int vowelCount = 0;
-for (count = 0; count < words.length(); count++) {
-    letter = words.toLowerCase().charAt(count);
-    for (int index = 0; index < vowels.length(); index++) {
-        if (letter == vowels.charAt(index)) {
-            vowelCount += 1;
-            break;
-        }
-    }
-}
-System.out.print(vowelCount);
+		String vowels = "aeiou";
+		String words = "mr femi";
+		int vowelCount = 0;
+		for (count = 0; count < words.length(); count++) {
+    			char letterOf = words.toLowerCase().charAt(count);
+   			 for (int index = 0; index < vowels.length(); index++) {
+        			if (letterOf == vowels.charAt(index)) {
+          			  vowelCount += 1;
+           				 break;
+       				 }
+  				  }
+				}
+		System.out.print("vowels = " + vowelCount);
 
+
+		System.out.println();
+		System.out.println();
 		
+		String ofNumbers = "12345";
+		count = 0;
+		while (count < ofNumbers.length()){
+			char letterOf = ofNumbers.charAt(count);
+			count++;
+		}
+		System.out.print("count of numbers in a number " + count);
+	
+		System.out.println();
+		System.out.println();
+		int sum =0;
+		ofNumbers = "12345";
+		count = 0;
+		while (count < ofNumbers.length()){
+			char letterOf =  ofNumbers.charAt(count);
+			sum+=Character.getNumericValue(letterOf);
+			count++;
+		}
+		System.out.print("sum of digits in a number " + sum);
 
-
-		
 	
 
+		System.out.println();
+		System.out.println();
+		int [] sumOf = new int [5];
+		ofNumbers = "12345";
+		count = 0;
+		sum =0;
+		int largest = 0;
+		while (count < ofNumbers.length()){
+			char letterOf =  ofNumbers.charAt(count);
+			sumOf[count] = Character.getNumericValue(letterOf);
+			largest = sumOf[0];
+			
+			if (sumOf[count]> largest){
+			largest = sumOf[count];
+			
+			}
+			count++;
+		}
+		System.out.print("largest of digits in a number " + largest);
+
+
+		System.out.println();
+		System.out.println();
+		int [] smallestOf = new int [5];
+		ofNumbers = "12345";
+		count = 0;
+		sum =0;
+		int smallest = 0;
+		while (count < ofNumbers.length()){
+			char letterOf =  ofNumbers.charAt(count);
+			smallestOf[count] = Character.getNumericValue(letterOf);
+			smallest = smallestOf[0];
+			
+			if (smallestOf[count] < smallest){
+			smallest = smallestOf[count];
+			
+			}
+			count++;
+		}
+		System.out.print("smallest of digits in a number " + smallest);
 
 
 	}
