@@ -5,8 +5,8 @@ ask user for two input and save one as father's age and the other as sons age ra
 check if the user input are greater than 1 and lesser than 80
 initialize tempsonage to be  2 multiply by sons age 
 initialize total to 0
-check if tempsonage is more than or equals to the fathers age, if yes, subtract father'sage from tempsonsage  and save in total, display the father age was twice as old as his son in total years, if not
-check if tempson'sage is lesser than the fathers age, if yes, subtract tempson'sage from father'sage and save in total, display the father age was will be twice as the sons age in total years.*/
+check if tempsonage is more than or same as  the fathers age, if yes, subtract father'sage from tempsonsage  and save in total, display the father age was twice as old as his son in total years, if not
+check if tempson'sage is smaller than the fathers age, if yes, subtract tempson'sage from father'sage and save in total, display the father age was will be twice as the sons age in total years.*/
 """
 
 

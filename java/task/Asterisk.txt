@@ -1,0 +1,40 @@
+public class Asterisk{
+	public static void main(String ... args){
+	int count = 10;
+	int counting = 1;
+	while(count <= 10){
+		while (counting <= count){
+			int counter = 1;
+			
+			if (count <= 9){
+				while (counter <= counting){
+				System.out.print(" ");
+					counter++;
+				}
+				counter=1;
+			}
+			System.out.print("*");
+
+			counting++;
+		}
+	counting=1;
+	count--;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}	
+
+}

@@ -1,0 +1,6 @@
+def access_third_element(nums):
+	return nums[2]
+
+
+
+access_third_element([10,20,30,40,50])

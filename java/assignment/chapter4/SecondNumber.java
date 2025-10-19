@@ -19,6 +19,9 @@
 				
 					largest = number;
 				}
+				if(number < max && number > secoundnumber){
+				secoundnumber = number;
+}
 				count++;
 			}
 
