@@ -1,5 +1,5 @@
 import random
-book=["i want to die", "chrome heart", "iphone","nisi","us","peace"]
+book=["i want to die", "chrome heart", "iphone","tales of the moon ","eye aye","peace", "ape in the zoo","demon slayer", "egbon adugbo"]
 def get_random_page():
 	result = random.randint(1,100)
 	return result
@@ -20,9 +20,14 @@ def remove_book(input,book=[]):
 	return "Book removed succesfully!"
 
 def update_book(input,data,book=[]):
+		counter=0
+		for count in book:
+			if input == count:
+				break
+			counter+=1
+			
+		book[counter]= data
 		
-		book.remove(input)
-		book.append(data)
 		return "Book updated successfully"
 def show_books(book):
 	
