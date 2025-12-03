@@ -1,5 +1,19 @@
 public class Account {
     private int balance;
+    private String name;
+    private String password;
+    private int accountNumber;
+    public Account(String name, String password, int accountNumber) {
+        this.name = name;
+        this.password = password;
+        this.accountNumber = accountNumber;
+    }
+
+    public Account() {
+
+    }
+
+
 
     public int getbalance() {
 
