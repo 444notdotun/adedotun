@@ -1,22 +1,27 @@
+
 public class Account {
     private int balance;
     private String name;
     private String password;
     private int accountNumber;
-    public Account(String name, String password, int accountNumber) {
+
+
+    public Account(String name, String password) {
         this.name = name;
         this.password = password;
+    }
+
+
+
+    public void setAccountNumber(int accountNumber) {
         this.accountNumber = accountNumber;
     }
 
-    public Account() {
-
-    }
 
 
 
-    public int getbalance() {
-
+    public int getBalance(String password) {
+        validatePassword(password);
        return balance;
     }
 
@@ -28,9 +33,10 @@ public class Account {
         if (amount < 0) throw new validateAmount("Invalid amount");
     }
 
-    public void withdraw(int amount) {
+    public void withdraw(int amount, String password) {
         validate(amount);
         validateAmountAboveBalance(amount);
+        validatePassword(password);
         balance-=amount;
     }
 
@@ -38,4 +44,13 @@ public class Account {
         if (amount > balance) throw new validateAmount("Insufficient balance");
     }
 
+    private void validatePassword(String password) {
+        if (!this.password.equals(password)) {
+            throw new validatePasswordException("WRONG PASSWORD");
+        }
+    }
+
+    public int getAccountNumber() {
+        return accountNumber;
+    }
 }
