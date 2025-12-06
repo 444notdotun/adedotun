@@ -74,6 +74,28 @@ class LinearRegressionTest {
     @Test
     void findTheInterceptsofValuesInXAndY(){
         linearRegression.setLength(4);
+        int [] values={1,2,3,4};
+        linearRegression.setValueX(values);
+        int [] valuesY = {40,55,65,80};
+        linearRegression.setValueY(valuesY);
+        assertEquals(27.5,linearRegression.getIntercepts(),1e-9);
+    }
+
+    @Test
+    void findLinearRegrression(){
+        linearRegression.setLength(4);
+        int [] values={1,2,3,4};
+        linearRegression.setValueX(values);
+        int [] valuesY = {40,55,65,80};
+        linearRegression.setValueY(valuesY);
+        String expected = """
+    X   Y   Yn
+    1   40  40.5
+    2   55  53.5
+    3   65  66.5
+    4   80  79.5
+    """;
+
     }
 
 

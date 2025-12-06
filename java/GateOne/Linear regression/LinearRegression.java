@@ -2,6 +2,8 @@ public class LinearRegression {
 
     private int [] valueX;
     private int [] valueY;
+    private double intercepts;
+    private double  slope;
 
     public int[] getvalueX() {
         return valueX;
@@ -74,6 +76,24 @@ public class LinearRegression {
         int sumX=FindSumOfValuesOfAnArray(valueX);
         int squareSumX = sumX*sumX;
         int squareXSum = FindSumOfValuesOfAnArray(squareX);
-        return (double) ((this.valueX.length * productSum) - sum) /((this.valueX.length*squareXSum)-squareSumX);
+        return  (double) ((this.valueX.length * productSum) - sum) /((this.valueX.length*squareXSum)-squareSumX);
+    }
+
+    public double getIntercepts() {
+        int sumOfY = FindSumOfValuesOfAnArray(valueY);
+        int sumOfX = FindSumOfValuesOfAnArray(valueX);
+        return (sumOfY-(getSlopeOfTwoArrays()*sumOfX))/(valueX.length);
+
+
+    }
+
+    public String getLinearExpression() {
+        StringBuilder linearRegression = new StringBuilder();
+        linearRegression.append(String.format("X\tY\tYn%n"));
+        for(int i=0;i<valueX.length;i++){
+            double bestFit = (getSlopeOfTwoArrays()*valueX[i])+getIntercepts();
+            linearRegression.append(String.format("%s\t%s\t%s%n",valueX[i],valueY[i],bestFit));
+        }
+        return linearRegression.toString();
     }
 }
