@@ -95,7 +95,6 @@ class LinearRegressionTest {
     3   65  66.5
     4   80  79.5
     """;
-
     }
 
 

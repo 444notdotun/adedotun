@@ -87,13 +87,13 @@ public class LinearRegression {
 
     }
 
-    public String getLinearExpression() {
+    public void getLinearExpression() {
         StringBuilder linearRegression = new StringBuilder();
         linearRegression.append(String.format("X\tY\tYn%n"));
         for(int i=0;i<valueX.length;i++){
             double bestFit = (getSlopeOfTwoArrays()*valueX[i])+getIntercepts();
             linearRegression.append(String.format("%s\t%s\t%s%n",valueX[i],valueY[i],bestFit));
         }
-        return linearRegression.toString();
+        IO.println(linearRegression.toString());
     }
 }
